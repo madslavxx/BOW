@@ -1,0 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Controls : MonoBehaviour
+{
+    public Rigidbody pc2;
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+    if(Input.GetKey("space")) 
+        {
+            pc2.AddForce(0, 4, 0);
+        }
+    if (Input.GetKey("d"))
+        {
+            pc2.AddForce(5, 0, 0);
+        }
+    if (Input.GetKey("a"))
+        {
+            pc2.AddForce(-5, 0, 0);
+        }
+        if (Input.GetKey("w"))
+        {
+            pc2.AddForce(0, 5, 0);
+        }
+    }
+}
